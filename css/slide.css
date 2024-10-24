@@ -1,0 +1,50 @@
+/* Slide images  */
+.slider-wrapper {
+    background-color: black;
+    margin-top:25px;
+  }
+  #slider {
+    overflow: hidden; /* Hide overflow */
+    width: 450px; /* Set a fixed width */
+    height: 350px; /* Set a fixed height */
+    position: relative;
+    margin: 0 auto; /* Center the slider */
+  }
+  .images {
+    display: flex; /* Align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+    width: 100%; /* Full width */
+  }
+  #slider img {
+    width: 450px !important; /* Match the width of the slider */
+    height: 300px !important; /* Match the height of the slider */
+  }
+  #slider .description {
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px !important;
+    opacity: .7;
+  }
+.dots {
+    text-align: center;
+    margin: 10px 0;
+    
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: lightgray; /* Inactive dot color */
+    cursor: pointer;
+}
+.active {
+    background-color: gray; /* Active dot color */
+}
+
